@@ -22,3 +22,10 @@ pipenv
 - Активировать окружение: pipenv shell
 
 poetry
+Powershell:
+- (Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python -
+- Добавить в переменные окружения PATH: %USERPROFILE%\.poetry\bin
+- Узнать версию: poetry --version
+- Установить зависимости: poetry install
+- Добавить новый пакет: poetry add allure-pytest --dev
+- Обновить пакет: poetry update
